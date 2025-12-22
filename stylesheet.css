@@ -120,25 +120,29 @@ header a {
 
 /* LOGIN BUTTON */
 .login-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login-container a {
+    color:#760e07;
 }
 
 .login-btn {
-    display: inline-block;
-    padding: 0.45rem 0.9rem;
-    background: #ffffff;
-    color: #760e07;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: all 0.15s ease;
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  background: #ffffff;
+  color: #760e07;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.15s ease;
 }
 
 .login-btn:hover {
-    background: #760e07;
-    color: #ffffff;
+  background: #760e07;
+  color: #ffffff;
 }
 
 body {
