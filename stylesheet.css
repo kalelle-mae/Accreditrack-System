@@ -511,8 +511,6 @@ body {
 .phase-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    padding: 20px 0;
 }
 
 .phase-item {
@@ -520,8 +518,8 @@ body {
 }
 
 .phase-item img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
 }
 
