@@ -6,30 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AccrediTrack - LIKH4RY</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <a class="logo-link" href="/index.html">
-            <div class="logo-container">
-                <div class="logo-icon"></div>
-                <span class="logo-text">AccrediTrack</span>
-            </div>
-        </a>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/html/header/announcement.html">Announcement</a></li>
-                <li><a href="/html/header/login.html">About Us</a></li>
-            </ul>
-        </nav>
-
-        <div class="login-container">
-            <a href="/html/header/login.html" class="login-btn">Login</a>
-        </div>
-    </header>
+    <!-- HEADER PLACEHOLDER -->
+    <div id="header-placeholder"></div>
 
     <!-- MAIN CONTENT -->
     <main>
@@ -176,6 +158,16 @@
     <footer class="footer">
         <p>&copy; 2025 AccrediTrack. All rights reserved.</p>
     </footer>
+
+    <!-- SCRIPT TO LOAD HEADER -->
+    <script>
+        fetch('/html/header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
 </body>
 
 </html>
