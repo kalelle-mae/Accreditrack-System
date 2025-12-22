@@ -375,7 +375,7 @@ body {
     opacity: 0;
 }
 
-.card-content {
+.card-description {
     padding: 15px;
     background: #fff;
     transform: skew(10deg);
@@ -484,18 +484,18 @@ body {
     object-fit: cover;
 }
 
-.mini-card-content {
+.mini-card-description {
     padding: 15px;
     text-align: center;
 }
 
-.mini-card-content h3 {
+.mini-card-description h3 {
     font-size: 1.1rem;
     color: #760e07;
     margin-bottom: 0;
 }
 
-.mini-card-content p {
+.mini-card-description p {
     font-size: 0.8rem;
     color: #666;
 }
