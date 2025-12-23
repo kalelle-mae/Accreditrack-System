@@ -323,8 +323,7 @@ body {
 }
 
 .mini-card {
-    width: 200px;
-    height: 200px;
+    width: 100%;
     background: #f9f9f9;
     border-radius: 8px;
     overflow: hidden;
@@ -369,6 +368,8 @@ body {
 .phase-list {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px 0;
 }
 
 .phase-item {
