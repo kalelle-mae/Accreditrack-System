@@ -3,13 +3,13 @@ header {
   align-items: center;
   justify-content: space-between;
   background: #760e07;
-  height: 70px;
+  height: 80px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  padding: 0 15px;
+  padding: 0 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
