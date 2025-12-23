@@ -24,6 +24,7 @@
   font-size: 16px;
   justify-content: center;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .side-nav a img {
@@ -37,6 +38,7 @@
 
 .side-nav a.active {
   background: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid #fff;
 }
 
 .side-nav.expanded {
@@ -54,6 +56,11 @@
 
 .side-nav a:hover {
   background: rgba(255, 255, 255, 0.12);
+  border-left: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+.side-nav a:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .page-content {
