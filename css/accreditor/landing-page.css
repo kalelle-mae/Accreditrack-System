@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* MAIN */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* neutral, non-red overlay */
+    background: linear-gradient(135deg,
+            rgba(158, 103, 103, 0.274),
+            rgba(0, 0, 0, 0.55)),
+        url("/asset/bg/pup_pillar.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0;
+    position: relative;
+}
+
+.main>* {
+    position: relative;
+    z-index: 2;
+}
+
+.main h1 {
+    font-size: 3.2rem;
+    margin-bottom: 18px;
+    color: #ffffff;
+    /* remove red glow, use subtle neutral shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35),
+        0 0 18px rgba(255, 255, 255, 0.02);
+    font-weight: 800;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.welcome-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.message {
+    max-width: 700px;
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(0, 0, 0, 0.25);
+    padding: 18px;
+    border-radius: 12px;
+    text-align: left;
+    line-height: 1.6;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.stats {
+    min-width: 260px;
+    background: #fff;
+    color: #760e07;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.stats h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.stats .count {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.btn-actions {
+    margin-top: 14px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    background: #fff;
+    color: #760e07;
+    transition: background 0.18s ease, color 0.18s ease,
+        transform 0.12s ease, box-shadow 0.18s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn:hover {
+    background: #760e07;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(118, 14, 7, 0.18);
+}
+
+.btn.secondary {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: background 0.18s ease, color 0.18s ease,
+        transform 0.12s ease, box-shadow 0.18s ease;
+}
+
+.btn.secondary:hover {
+    background: rgba(255, 255, 255, 0.92);
+    color: #760e07;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    height: 40vh;
+    background: #760e07;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.logo-container img {
+    height: 48px;
+    width: auto;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.25));
+}
+
+/* director message styles (white background, dark text) */
+.director-section {
+    max-width: 980px;
+    margin: 28px auto;
+    padding: 22px;
+    background: #ffffff;
+    color: #222;
+    /* dark text for white background */
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.04);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    border-left: 5px solid #760e07;
+    /* red accent */
+}
+
+.director-portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.director-section img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 18px rgba(7, 18, 34, 0.06);
+}
+
+.portrait-caption {
+    font-weight: 700;
+    color: #760e07;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.director-section h2 {
+    color: #2b2b2b;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    letter-spacing: 0.4px;
+}
+
+.director-section .text {
+    line-height: 1.65;
+    color: #333;
+}
+
+.director-quote {
+    font-style: italic;
+    font-size: 0.98rem;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
