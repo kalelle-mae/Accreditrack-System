@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -25,7 +30,7 @@ header {
 header .logo-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 header .logo-icon {
@@ -99,31 +104,6 @@ header a.logo-link {
     header .login-container {
         margin-top: 10px;
     }
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-icon {
-    width: 60px;
-    height: 60px;
-    background: url("/asset/logo/accreditrack.png") no-repeat center;
-    background-size: contain;
-    margin-top: 28px;
-}
-
-.logo-text {
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-top: 25px;
 }
 
 /*<===== MAIN NAV =====> */

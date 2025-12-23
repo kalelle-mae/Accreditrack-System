@@ -1,9 +1,13 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
+* {
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* MAIN */
@@ -387,13 +391,13 @@
     }
 }
 
-.logo-container {
+.logos {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
 }
 
-.logo-container img {
+.logos img {
     height: 80px;
     width: auto;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
