@@ -15,6 +15,16 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+.left-section {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+body.sidebar-expanded .left-section {
+  flex-direction: row-reverse;
+}
+
 .sidebar-toggle-btn {
   background: none;
   border: none;
@@ -29,12 +39,25 @@ header {
   margin-right: 15px;
 }
 
+body.sidebar-expanded .sidebar-toggle-btn {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
 .sidebar-toggle-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .sidebar-toggle-btn svg {
   display: block;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+body.sidebar-expanded .logo-link {
+  order: 1;
 }
 
 header .logo-container {

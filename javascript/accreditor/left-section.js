@@ -5,14 +5,12 @@ fetch("/html/role/accreditor/left-section.html")
 
     const sidebar = document.querySelector(".side-nav");
 
-    // Restore sidebar state from localStorage
     const isExpanded = localStorage.getItem("sidebarExpanded") === "true";
     if (isExpanded && sidebar) {
       sidebar.classList.add("expanded");
       document.body.classList.add("sidebar-expanded");
     }
 
-    // Set active link based on current page
     const currentPage = window.location.pathname;
     const navLinks = document.querySelectorAll(".side-nav a");
     navLinks.forEach((link) => {
@@ -23,7 +21,6 @@ fetch("/html/role/accreditor/left-section.html")
       }
     });
 
-    // Initialize toggle functionality after sidebar is loaded
     const toggleBtn = document.getElementById("sidebarToggleBtn");
     if (toggleBtn) {
       toggleBtn.addEventListener("click", function () {
@@ -31,10 +28,8 @@ fetch("/html/role/accreditor/left-section.html")
           sidebar.classList.toggle("expanded");
           const isExpanded = sidebar.classList.contains("expanded");
 
-          // Save state to localStorage
           localStorage.setItem("sidebarExpanded", isExpanded);
 
-          // Toggle body class for responsive padding
           if (isExpanded) {
             document.body.classList.add("sidebar-expanded");
           } else {
