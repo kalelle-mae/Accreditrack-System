@@ -2,7 +2,7 @@
     position: fixed;
     top: 70px;
     left: 0;
-    width: 60px;
+    width: 70px;
     height: calc(100vh - 70px);
     background: #760e07;
     display: flex;
@@ -18,8 +18,9 @@
     align-items: center;
     gap: 10px;
     padding: 12px 0;
-    color: #000;
+    color: #fff;
     text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     justify-content: center;
     transition: all 0.3s ease;
@@ -39,7 +40,7 @@
 }
 
 .side-nav:hover {
-    width: 200px;
+    width: 225px;
 }
 
 .side-nav:hover a {
@@ -60,9 +61,4 @@
     margin-left: 60px; /* sidebar width */
     padding: 20px;
     transition: margin-left 0.3s ease;
-}
-
-/* Optional: shift content when sidebar expands */
-.side-nav:hover ~ .page-content {
-    margin-left: 200px;
 }
