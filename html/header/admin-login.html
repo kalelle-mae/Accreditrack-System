@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - AccrediTrack</title>
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  <div class="main-content">
+    <div class="login-card">
+      <div class="role-badge admin-badge">
+        <div class="badge-text">Administrator Login</div>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label>
+            Email Address
+            <span class="required">*</span>
+          </label>
+          <div class="input-wrapper">
+            <input type="email" name="email" placeholder="Enter your email address" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>
+            Password
+            <span class="required">*</span>
+          </label>
+          <div class="input-wrapper">
+            <input type="password" name="password" placeholder="Enter your password" required>
+          </div>
+        </div>
+
+        <div class="forgot-password">
+          <a href="/html/header/forgot-password.html">Forgot your password?</a>
+        </div>
+
+        <a href="/html/role/admin.html" class="signin-btn admin-signin signin-link">
+          Sign In as Administrator
+        </a>
+
+        <div class="create-account">
+          <a href="/html/header/login.html">
+            ← Back to Role Selection
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/javascript/header.js"></script>
+</body>
+
+</html>

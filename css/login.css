@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0.444)),
+        url("/asset/bg/pup_pillar.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-holder {
+    text-align: center;
+    color: #1a1a1a;
+    margin: 125px;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.login-holder h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: #3d0000;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    letter-spacing: 1.5px;
+    position: relative;
+    z-index: 3;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #570101;
+    margin-bottom: 50px;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 3;
+}
+
+/* ===== Transparent white background shape ===== */
+.white-bg-shape {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1120px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.521);
+    border-radius: 30px;
+    z-index: 1;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6px);
+}
+
+.role-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* === CARD STYLE === */
+.role-card {
+    width: 240px;
+    height: 320px;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 28px rgba(118, 14, 7, 0.4);
+}
+
+/* === IMAGE WITH OVERLAY === */
+.card-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.card-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(118, 14, 7, 0.6);
+    transition: opacity 0.4s ease;
+    opacity: 1;
+}
+
+.role-card:hover .card-image::after {
+    opacity: 0;
+}
+
+.role-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+/* === TEXT CONTENT === */
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.role-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #760e07;
+}
+
+/* Different images per role */
+.admin-card img {
+    content: url("/asset/login/administrator.png");
+}
+
+.faculty-card img {
+    content: url("/asset/login/faculty.png");
+}
+
+.coordinator-card img {
+    content: url("/asset/login/coordinator.png");
+}
+
+.accreditor-card img {
+    content: url("/asset/login/accreditor.png");
+}
+
+.divider {
+    width: 120px;
+    height: 3px;
+    background-color: #3a4b5c;
+    margin: 0 auto 25px auto;
+    border-radius: 5px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 3;
+}
