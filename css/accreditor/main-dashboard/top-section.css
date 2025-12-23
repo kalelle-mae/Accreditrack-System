@@ -1,84 +1,105 @@
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #760e07;
-    height: 70px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 0 40px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #760e07;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-header .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.left-section {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
-header .logo-icon {
-    width: 50px;
-    height: 50px;
-    background: url("/asset/logo/accreditrack.png") no-repeat center;
-    background-size: contain;
+body.sidebar-expanded .left-section {
+  flex-direction: row-reverse;
 }
 
-header .logo-text {
-    font-size: 26px;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 0;
+.sidebar-toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  margin-right: 15px;
+}
+
+body.sidebar-expanded .sidebar-toggle-btn {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.sidebar-toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-toggle-btn svg {
+  display: block;
 }
 
 .logo-link {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+body.sidebar-expanded .logo-link {
+  order: 1;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+header .logo-icon {
+  width: 50px;
+  height: 60px;
+  background: url("/asset/logo/accreditrack.png") no-repeat center;
+  background-size: contain;
+}
+
+header .logo-text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: -15px;
+}
+
+.logo-link {
+  text-decoration: none;
 }
 
 .right-icons {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-left: auto;
-    padding-right: 70px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+  padding-right: 70px;
 }
 
-
 .right-icons img {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .right-icons img:hover {
-    transform: scale(1.1);
-}
-
-.logout-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.logout-btn {
-    display: inline-block;
-    padding: 0.45rem 0.9rem;
-    background: #ffffff;
-    color: #760e07;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: all 0.15s ease;
-}
-
-.logout-btn:hover {
-  background: #760e07;
-  color: #ffffff;
+  transform: scale(1.1);
 }

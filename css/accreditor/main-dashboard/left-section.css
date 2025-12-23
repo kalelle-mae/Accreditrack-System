@@ -1,64 +1,102 @@
 .side-nav {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 70px;
-    height: calc(100vh - 70px);
-    background: #760e07;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0;
-    z-index: 900;
-    transition: width 0.3s ease;
-    overflow: hidden;
+  position: fixed;
+  top: 90px;
+  left: 10px;
+  width: 70px;
+  height: 84vh;
+  background: linear-gradient(145deg, #8a1109, #760e07);
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  z-index: 900;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-radius: 35px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3),
+    -4px -4px 12px rgba(139, 17, 9, 0.4),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .side-nav a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 0;
-    color: #fff;
-    text-decoration: none;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    justify-content: center;
-    transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 4px 8px;
+  border-radius: 20px;
 }
 
 .side-nav a img {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 
 .side-nav a span {
-    display: none;
+  display: none;
 }
 
 .side-nav a.active {
-    background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid #fff;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2),
+    2px 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 20px 20px 20px 20px;
 }
 
-.side-nav:hover {
-    width: 225px;
+.side-nav.expanded {
+  width: 250px;
+  border-radius: 30px;
 }
 
-.side-nav:hover a {
-    justify-content: flex-start;
-    padding-left: 20px;
+.side-nav.expanded a {
+  justify-content: flex-start;
+  padding-left: 20px;
+  border-radius: 20px;
 }
 
-.side-nav:hover a span {
-    display: inline;
+.side-nav.expanded a span {
+  display: inline;
 }
 
 .side-nav a:hover {
-    background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.12);
+  border-left: 4px solid rgba(255, 255, 255, 0.5);
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1),
+    2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.side-nav a:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.logout-link {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 16px !important;
+}
+
+.logout-link svg {
+  width: 28px;
+  height: 28px;
+}
+
+.logout-link:hover {
+  background: rgba(255, 87, 87, 0.2) !important;
+  border-left: 4px solid #ff5757 !important;
 }
 
 .page-content {
-    margin-top: 70px;
-    margin-left: 60px; /* sidebar width */
-    padding: 20px;
-    transition: margin-left 0.3s ease;
+  margin-top: 70px;
+  margin-left: 70px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
 }
