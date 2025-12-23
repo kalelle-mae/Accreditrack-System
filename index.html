@@ -10,10 +10,8 @@
 </head>
 
 <body>
-    <!-- HEADER PLACEHOLDER -->
     <div id="header-placeholder"></div>
 
-    <!-- MAIN CONTENT -->
     <main>
         <section class="main">
             <div class="decorative-line"></div>
@@ -154,20 +152,11 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <p>&copy; 2025 AccrediTrack. All rights reserved.</p>
     </footer>
 
-    <!-- SCRIPT TO LOAD HEADER -->
-    <script>
-        fetch('/html/header/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading header:', error));
-    </script>
+    <script src="/javascript/header.js"></script>
 </body>
 
 </html>

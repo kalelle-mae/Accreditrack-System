@@ -10,10 +10,8 @@
 </head>
 
 <body>
-    <!-- HEADER PLACEHOLDER -->
     <div id="header-placeholder"></div>
 
-    <!-- ANNOUNCEMENTS CONTENT -->
     <div class="announcements">
         <h1 class="page-title">Announcements</h1>
 
@@ -69,15 +67,7 @@
         </div>
     </div>
 
-    <!-- SCRIPT TO LOAD HEADER -->
-    <script>
-        fetch('/html/header/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading header:', error));
-    </script>
+    <script src="/javascript/header.js"></script>
 </body>
 
 </html>
