@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 120px 50px 50px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    padding: 40px 50px;
+}
+
+.title {
+    color: #c32d2d;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-desc {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.program-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fdfdfd;
+    border: 1.8px solid #e4e4e4;
+    border-radius: 12px;
+    padding: 25px 30px;
+    /* bigger padding */
+    margin-bottom: 20px;
+    transition: all 0.25s ease;
+}
+
+.program-card:hover {
+    border-color: #c32d2d;
+    box-shadow: 0 8px 18px rgba(195, 45, 45, 0.15);
+    transform: translateY(-3px);
+}
+
+.program-info h3 {
+    font-size: 1.15rem;
+    color: #a51919;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.program-info p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Button */
+.view-btn {
+    background-color: #f8dede;
+    color: #a51919;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.view-btn:hover {
+    background-color: #a51919;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 30px 25px;
+    }
+
+    .program-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .view-btn {
+        align-self: flex-end;
+    }
+}
