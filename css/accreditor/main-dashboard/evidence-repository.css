@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    padding: 95px 50px 50px;
+    color: #222;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    padding: 40px 50px;
+}
+
+.title {
+    color: #c32d2d;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-desc {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.search-bar input:focus {
+    border-color: #a51919;
+}
+
+.search-btn {
+    background-color: #a51919;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.search-btn:hover {
+    background-color: #c32d2d;
+    transform: scale(1.05);
+}
+
+.results-info {
+    font-size: 0.95rem;
+    color: #444;
+    margin: 20px 0 10px;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.results-table th {
+    background-color: #faf3f3;
+    color: #a51919;
+    text-align: left;
+    padding: 14px 18px;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+}
+
+.results-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.97rem;
+    color: #333;
+}
+
+.results-table tr:hover {
+    background-color: #f8dede;
+    transition: background 0.25s ease;
+}
+
+/* Highlight Rows */
+.results-table .highlight {
+    background-color: #fff5f5;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    .results-table th,
+    .results-table td {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
