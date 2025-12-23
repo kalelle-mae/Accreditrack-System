@@ -4,15 +4,12 @@ fetch("/html/role/accreditor/left-section.html")
     document.getElementById("side-nav-placeholder").innerHTML = data;
 
     const sidebar = document.querySelector(".side-nav");
-    const container = document.querySelector(".container");
 
     // Restore sidebar state from localStorage
     const isExpanded = localStorage.getItem("sidebarExpanded") === "true";
     if (isExpanded && sidebar) {
       sidebar.classList.add("expanded");
-      if (container) {
-        container.style.marginLeft = "225px";
-      }
+      document.body.classList.add("sidebar-expanded");
     }
 
     // Set active link based on current page
@@ -37,9 +34,11 @@ fetch("/html/role/accreditor/left-section.html")
           // Save state to localStorage
           localStorage.setItem("sidebarExpanded", isExpanded);
 
-          // Adjust container margin
-          if (container) {
-            container.style.marginLeft = isExpanded ? "225px" : "70px";
+          // Toggle body class for responsive padding
+          if (isExpanded) {
+            document.body.classList.add("sidebar-expanded");
+          } else {
+            document.body.classList.remove("sidebar-expanded");
           }
         }
       });
