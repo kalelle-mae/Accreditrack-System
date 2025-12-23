@@ -103,25 +103,3 @@ header .logo-text {
 .right-icons img:hover {
   transform: scale(1.1);
 }
-
-.logout-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logout-btn {
-  display: inline-block;
-  padding: 0.45rem 0.9rem;
-  background: #ffffff;
-  color: #760e07;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: all 0.15s ease;
-}
-
-.logout-btn:hover {
-  background: #760e07;
-  color: #ffffff;
-}

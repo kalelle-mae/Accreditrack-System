@@ -78,6 +78,22 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
+.logout-link {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 16px !important;
+}
+
+.logout-link svg {
+  width: 28px;
+  height: 28px;
+}
+
+.logout-link:hover {
+  background: rgba(255, 87, 87, 0.2) !important;
+  border-left: 4px solid #ff5757 !important;
+}
+
 .page-content {
   margin-top: 70px;
   margin-left: 70px;
