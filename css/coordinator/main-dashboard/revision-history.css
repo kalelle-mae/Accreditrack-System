@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.sidebar-expanded {
+  padding-left: 225px;
+}
+
+h1 {
+    color: #b91c1c;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+p.subtitle {
+    color: #444;
+    margin-bottom: 25px;
+}
+
+p.subtitle strong {
+    color: #b91c1c;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-header::before {
+    content: "⏱️";
+    font-size: 22px;
+    margin-right: 10px;
+    color: #c62828;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e5e7eb;
+    margin-bottom: 20px;
+}
+
+.revision-container {
+    border: 1.5px solid #fcd34d;
+    background-color: #fffbea;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.revision-title {
+    font-weight: bold;
+    color: #7c5300;
+    background-color: #fff3c4;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.revision-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-left: 4px solid #facc15;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.revision-entry:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.revision-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.revision-date {
+    font-size: 13px;
+    color: #666;
+}
+
+.revision-action {
+    font-size: 14px;
+    color: #333;
+}
+
+.revision-user {
+    font-size: 14px;
+    font-weight: bold;
+    color: #b91c1c;
+    white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .section-header {
+        font-size: 16px;
+    }
+
+    .revision-entry {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .revision-user {
+        align-self: flex-end;
+    }
+}
