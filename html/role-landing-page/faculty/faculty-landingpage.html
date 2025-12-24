@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Landing Page</title>
+    <link rel="stylesheet" href="/css/faculty/landing-page.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="logo-container">
+            <img src="/asset/logo/pup.png" alt="PUP Logo">
+            <img src="/asset/logo/accreditrack.png" alt="AccrediTrack Logo">
+        </div>
+
+        <h1 id="facultyGreeting">Welcome, Faculty [Name]!</h1>
+
+        <div class="welcome-card">
+            <div class="message" aria-live="polite">
+                <p id="coordMessage">
+                    <strong>Message from the Program Coordinator:</strong><br>
+                    Thank you for your contribution to our program’s accreditation
+                    journey. Your timely submissions and cooperation are essential to
+                    maintaining and improving our program quality. Please review your
+                    pending items and reach out if you need assistance.
+                </p>
+
+                <div class="btn-actions">
+                    <a href="/html/role/faculty.html" class="btn">
+                        View Submissions
+                    </a>
+                    <a href="/html/role-landing-page/faculty/faculty-learn-more.html"
+                    class="btn secondary">Learn More
+                    </a>
+                </div>
+            </div>
+
+            <div class="stats" role="status" aria-live="polite">
+                <h3>Quick Stats</h3>
+                <div class="count" id="pendingCount">4</div>
+                <div class="muted">Pending document submissions</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 AccrediTrack. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
