@@ -14,9 +14,9 @@ body.sidebar-expanded {
     width: 90%;
     max-width: 1300px;
     margin: 100px auto;
-    transform: translateX(40px);
+    transform: translateX(45px);
     background-color: white;
-    padding: 40px 80px;
+    padding: 40px 60px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: margin-left 0.3s ease;
