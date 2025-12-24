@@ -1,128 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accreditor Dashboard - AccrediTrack</title>
-    <link
-      rel="stylesheet"
-      href="/css/accreditor/main-dashboard/top-section.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/css/accreditor/main-dashboard/dashboard.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/css/accreditor/main-dashboard/left-section.css"
-    />
-  </head>
 
-  <body>
-    <!-- Header placeholder -->
-    <div id="main-header-placeholder"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accreditor Dashboard - AccrediTrack</title>
+  <link rel="stylesheet" href="/css/accreditor/main-dashboard/top-section.css">
+  <link rel="stylesheet" href="/css/accreditor/main-dashboard/dashboard.css">
+  <link rel="stylesheet" href="/css/accreditor/main-dashboard/left-section.css">
+</head>
 
-    <!-- Sidebar placeholder -->
-    <div id="side-nav-placeholder"></div>
+<body>
+  <!-- Header placeholder -->
+  <div id="main-header-placeholder"></div>
 
-    <!-- Main container for content -->
-    <div class="container">
-      <main class="page-content">
-        <div class="top-nav">
-          <div>
-            <h1>Hi, Gerald</h1>
-            <h3>Quick Overview</h3>
-          </div>
-          <div class="datetime">
-            <p>October 18, 2025<br />15:30 PM</p>
-          </div>
+  <!-- Sidebar placeholder -->
+  <div id="side-nav-placeholder"></div>
+
+  <!-- Main container for content -->
+  <div class="container">
+    <main class="page-content">
+      <div class="top-nav">
+        <div>
+          <h1>Hi, Gerald</h1>
+          <h3>Quick Overview</h3>
         </div>
-
-        <div class="overview">
-          <div class="card blue">
-            <p>Programs Assigned</p>
-            <h2>2</h2>
-            <small>BSIT & BSHM</small>
-          </div>
-          <div class="card yellow">
-            <p>Criteria Scored</p>
-            <h2>42 / 98</h2>
-            <small>42.8% Complete</small>
-          </div>
-          <div class="card red">
-            <p>Focus Area Lead</p>
-            <h2>Area I, II, V, IX</h2>
-            <small>Completion Date: Nov 20, 2025</small>
-          </div>
+        <div class="datetime">
+          <p>October 18, 2025<br />15:30 PM</p>
         </div>
+      </div>
 
-        <div class="pending">
-          ⚠️ <strong>Pending Action Required:</strong> The Program Head has
-          responded to your query regarding <strong>Criterion V.4</strong>.
-          Please check the <strong>Notes & Feedback</strong> panel.
+      <div class="overview">
+        <div class="card blue">
+          <p>Programs Assigned</p>
+          <h2>2</h2>
+          <small>BSIT & BSHM</small>
         </div>
-
-        <div class="summary">
-          <h2>Review Progress Summary</h2>
-          <p>
-            Below is the list of program criteria assigned to you for review and
-            scoring.
-          </p>
+        <div class="card yellow">
+          <p>Criteria Scored</p>
+          <h2>42 / 98</h2>
+          <small>42.8% Complete</small>
         </div>
-
-        <div class="filter-bar">
-          <input type="text" placeholder="Search by Program or Criterion" />
-          <select>
-            <option>Filter by All</option>
-            <option>Pending Response</option>
-            <option>Completed</option>
-            <option>Under Review</option>
-          </select>
+        <div class="card red">
+          <p>Focus Area Lead</p>
+          <h2>Area I, II, V, IX</h2>
+          <small>Completion Date: Nov 20, 2025</small>
         </div>
+      </div>
 
-        <table>
-          <tr>
-            <th>Program</th>
-            <th>Criterion</th>
-            <th>Status</th>
-            <th>Last Updated</th>
-            <th>Action</th>
-          </tr>
-          <tr>
-            <td>BSIT</td>
-            <td>Criterion I.A - Vision & Mission Alignment</td>
-            <td><span class="status approve">Completed</span></td>
-            <td>Nov 05, 2025</td>
-            <td class="actions">
-              <button class="action-btn disapprove">Reopen</button>
-            </td>
-          </tr>
-          <tr>
-            <td>BSHM</td>
-            <td>Criterion V.4 - Student Outcomes Assessment</td>
-            <td><span class="status review">Pending Response</span></td>
-            <td>Nov 08, 2025</td>
-            <td class="actions">
-              <button class="action-btn approve">Mark Complete</button>
-              <button class="action-btn disapprove">Request Info</button>
-            </td>
-          </tr>
-          <tr>
-            <td>BSIT</td>
-            <td>Criterion IX.B - Research Extension Activities</td>
-            <td><span class="status under">Under Review</span></td>
-            <td>Nov 07, 2025</td>
-            <td class="actions">
-              <button class="action-btn approve">Complete</button>
-            </td>
-          </tr>
-        </table>
-      </main>
-    </div>
+      <div class="pending">
+        ⚠️ <strong>Pending Action Required:</strong> The Program Head has
+        responded to your query regarding <strong>Criterion V.4</strong>.
+        Please check the <strong>Notes & Feedback</strong> panel.
+      </div>
 
-    <!-- Scripts to load dynamic header and sidebar -->
-    <script src="/javascript/accreditor/main-header.js"></script>
-    <script src="/javascript/accreditor/left-section.js"></script>
-    <script src="/javascript/accreditor/top-section.js"></script>
-  </body>
+      <div class="summary">
+        <h2>Review Progress Summary</h2>
+        <p>
+          Below is the list of program criteria assigned to you for review and
+          scoring.
+        </p>
+      </div>
+
+      <div class="filter-bar">
+        <input type="text" placeholder="Search by Program or Criterion">
+        <select>
+          <option>Filter by All</option>
+          <option>Pending Response</option>
+          <option>Completed</option>
+          <option>Under Review</option>
+        </select>
+      </div>
+
+      <table>
+        <tr>
+          <th>Program</th>
+          <th>Criterion</th>
+          <th>Status</th>
+          <th>Last Updated</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>BSIT</td>
+          <td>Criterion I.A - Vision & Mission Alignment</td>
+          <td><span class="status approve">Completed</span></td>
+          <td>Nov 05, 2025</td>
+          <td class="actions">
+            <button class="action-btn disapprove">Reopen</button>
+          </td>
+        </tr>
+        <tr>
+          <td>BSHM</td>
+          <td>Criterion V.4 - Student Outcomes Assessment</td>
+          <td><span class="status review">Pending Response</span></td>
+          <td>Nov 08, 2025</td>
+          <td class="actions">
+            <button class="action-btn approve">Mark Complete</button>
+            <button class="action-btn disapprove">Request Info</button>
+          </td>
+        </tr>
+        <tr>
+          <td>BSIT</td>
+          <td>Criterion IX.B - Research Extension Activities</td>
+          <td><span class="status under">Under Review</span></td>
+          <td>Nov 07, 2025</td>
+          <td class="actions">
+            <button class="action-btn approve">Complete</button>
+          </td>
+        </tr>
+      </table>
+    </main>
+  </div>
+
+  <!-- Scripts to load dynamic header and sidebar -->
+  <script src="/javascript/accreditor/main-header.js"></script>
+  <script src="/javascript/accreditor/left-section.js"></script>
+  <script src="/javascript/accreditor/top-section.js"></script>
+</body>
+
 </html>
