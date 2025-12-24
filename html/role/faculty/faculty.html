@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard - AccrediTrack</title>
+</head>
+
+<body>
+
+    <div class="overview">
+        <div class="card red">
+            <p>TOTAL ASSIGNED TASKS</p>
+            <h2>4</h2>
+        </div>
+        <div class="card yellowgreen">
+            <p>COMPLETED SUBMISSIONS</p>
+            <h2>1</h2>
+        </div>
+        <div class="card blue">
+            <p>PENDING REVIEW</p>
+            <h2>2</h2>
+        </div>
+        <div class="card purple">
+            <p>NEEDS REVISION</p>
+            <h2>1</h2>
+        </div>
+    </div>
+
+    <div class="card submission-rate">
+        <p>Overall Submission Rate</p>
+        <div class="progress-circle">
+            <svg>
+                <circle class="progress-bg" cx="110" cy="110" r="100"></circle>
+                <circle class="progress-bar" cx="110" cy="110" r="100"></circle>
+            </svg>
+            <div class="progress-percentage">25%</div>
+        </div>
+        <div class="progress-label">of tasks approved or pending review.</div>
+    </div>
+
+    <div class="immediate-tasks">
+        <div class="card immediate-tasks">
+            <h3>Immediate Tasks (3 Critical)</h3>
+
+            <div class="task-card faculty">
+                <div class="task-header">
+                    <div class="task-title">Upload CV / Resume (updated)</div>
+                    <div class="status pending">⏱ Pending</div>
+                </div>
+                <div class="task-info">Area: <b>Faculty</b> | Criteria: A.1.1</div>
+                <div class="deadline">Deadline: 2025-11-30</div>
+            </div>
+
+            <div class="task-card curriculum">
+                <div class="task-header">
+                    <div class="task-title">Submit Course Syllabus (AY 24-25, 2nd Sem)</div>
+                    <div class="status revision">⚠ Needs Revision</div>
+                </div>
+                <div class="task-info">Area: <b>Curriculum</b> | Criteria: B.2.1</div>
+                <div class="deadline">Deadline: 2025-12-05</div>
+            </div>
+
+            <div class="task-card extension">
+                <div class="task-header">
+                    <div class="task-title">Documentation of Extension Project</div>
+                    <div class="status pending">⏱ Pending</div>
+                </div>
+                <div class="task-info">Area: <b>Extension</b> | Criteria: D.1.4</div>
+                <div class="deadline">Deadline: 2025-12-15</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
