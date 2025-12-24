@@ -2,16 +2,23 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f3f4f6;
+    padding: 10px 50px 50px 120px;
+    transition: padding-left 0.3s ease;
+}
+
+body.sidebar-expanded {
+  padding-left: 225px;
 }
 
 .container {
     width: 90%;
-    max-width: 1400px;
-    margin: 40px auto;
+    max-width: 1300px;
+    margin: 100px auto;
     background-color: white;
-    padding: 40px 50px;
+    padding: 40px 80px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: margin-left 0.3s ease;
 }
 
 h1 {
@@ -143,4 +150,8 @@ p.subtitle {
     .card p.value {
         font-size: 36px;
     }
+}
+
+.side-nav.expanded ~ .container {
+  margin-left: 225px;
 }
