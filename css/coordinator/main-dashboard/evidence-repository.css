@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #b91c1c;
+}
+
+p.subtitle {
+    color: #444;
+    margin-bottom: 25px;
+}
+
+p.subtitle strong {
+    color: #b91c1c;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-header::before {
+    content: "🧳";
+    font-size: 20px;
+    margin-right: 10px;
+    color: #c62828;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e5e7eb;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.2s;
+    flex: 1;
+    min-width: 180px;
+}
+
+select:hover {
+    border-color: #b91c1c;
+}
+
+.criterion-card {
+    border: 1.5px solid #f2b1b1;
+    border-radius: 8px;
+    padding: 15px 20px;
+    background-color: #fff9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.criterion-title {
+    font-weight: bold;
+    color: #b91c1c;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.criterion-title::before {
+    content: "📁";
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.document {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.document:last-child {
+    border-bottom: none;
+}
+
+.doc-name {
+    color: #333;
+    font-size: 14px;
+}
+
+.doc-status {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    gap: 10px;
+}
+
+.approved {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.download {
+    color: #2e7d32;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+.download:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .document {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .doc-status {
+        align-self: flex-end;
+    }
+}
