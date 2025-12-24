@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Verdana", sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    padding: 40px;
+}
+
+body.sidebar-expanded {
+  padding-left: 275px;
+}
+
+.panel {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.panel-header span {
+    font-size: 22px;
+    font-weight: 600;
+    color: #760e07;
+}
+
+.panel-header::before {
+    content: "📋";
+    font-size: 22px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+p {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+th,
+td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #f4f4f4;
+    color: #444;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+tr:hover td {
+    background-color: #f9fafb;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.action-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    transition: opacity 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.upload-document {
+    background-color: #2a4edc;
+}
+
+.view-details {
+    background-color: #aeaeae;
+}
+
+.view-feedback {
+    background-color: orangered;
+}
+
+.action-btn:hover {
+    opacity: 0.85;
+}
+
+/* Hidden checkbox to toggle modal */
+#uploadModalToggle {
+    display: none;
+}
+
+/* Modal background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Show modal when checkbox checked */
+#uploadModalToggle:checked+.modal {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 12px;
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-content h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.modal-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.modal-content input[type="file"] {
+    display: none;
+}
+
+.modal-content label.upload-box {
+    display: block;
+    padding: 40px 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #888;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.modal-content label.upload-box:hover {
+    border-color: #2a4edc;
+    color: #2a4edc;
+}
+
+.close-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    background: #e05a5a;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.close-btn:hover {
+    opacity: 0.85;
+}
+
+.title {
+    font-size: 22px;
+}
