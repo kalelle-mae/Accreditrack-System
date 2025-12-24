@@ -1,0 +1,144 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #760e07;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo-icon {
+    width: 50px;
+    height: 50px;
+    background: url("/asset/logo/accreditrack.png") no-repeat center;
+    background-size: contain;
+}
+
+header .logo-text {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Navigation */
+header .main-nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .main-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+header .login-container .login-btn {
+    display: inline-block;
+    padding: 6px 16px;
+    background: white;
+    color: #760e07;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+header .login-container .login-btn:hover {
+    background: #760e07;
+    color: white;
+}
+
+/* Logo link wrapper */
+header a.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+        align-items: flex-start;
+    }
+
+    header .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    header .login-container {
+        margin-top: 10px;
+    }
+}
+
+/*<===== MAIN NAV =====> */
+
+.main-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px; /* space between items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    color: #ffffff;
+}
+
+/* LOGIN BUTTON */
+.login-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login-container a {
+    color:#760e07;
+}
+
+.login-btn {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  background: #ffffff;
+  color: #760e07;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+.login-btn:hover {
+  background: #760e07;
+  color: #ffffff;
+}
