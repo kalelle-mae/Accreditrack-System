@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #333;
+}
+
+p.subtitle {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border-top: 6px solid #ccc;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.card p.value {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card p.note {
+    font-size: 14px;
+    color: #777;
+    margin-top: 6px;
+}
+
+.red {
+    border-top-color: #e53935;
+    color: #e53935;
+}
+
+.yellow {
+    border-top-color: #fbc02d;
+    color: #fbc02d;
+}
+
+.green {
+    border-top-color: #43a047;
+    color: #43a047;
+}
+
+.gray {
+    border-top-color: #424242;
+    color: #424242;
+}
+
+.section-title {
+    font-size: 22px;
+    margin: 40px 0 25px 0;
+    color: #333;
+}
+
+.progress-item {
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 14px;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.4s ease-in-out;
+}
+
+.green-fill {
+    background-color: #43a047;
+}
+
+.yellow-fill {
+    background-color: #fbc02d;
+}
+
+.red-fill {
+    background-color: #e53935;
+}
+
+.blue-fill {
+    background-color: #1e88e5;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .progress-item {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .card p.value {
+        font-size: 36px;
+    }
+}
