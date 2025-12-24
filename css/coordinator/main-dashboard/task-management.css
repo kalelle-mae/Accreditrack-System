@@ -1,39 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", Arial, sans-serif;
-}
-
 body {
     background-color: #f9f9f6;
     color: #333;
     padding: 40px;
+    font-family: Arial, sans-serif;
 }
 
-.header {
-    margin-bottom: 30px;
+body.sidebar-expanded {
+  padding-left: 225px;
 }
 
-.header h1 {
+.container {
+    margin-bottom: 10px;
+}
+
+.container h1 {
     font-size: 28px;
     font-weight: 700;
     color: #b32025;
     margin-bottom: 8px;
 }
 
-.header p {
+.container p {
     color: #555;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.header p span {
+.container p span {
     color: #b32025;
     font-weight: 700;
 }
 
-.header .underline {
+.container .underline {
     width: 50px;
     height: 3px;
     background-color: #dba800;
