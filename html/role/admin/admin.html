@@ -9,114 +9,116 @@
 </head>
 
 <body>
-    <div class="header">
-        <div>
-            <h1>Hi, Gerald</h1>
-            <h3>Quick Overview</h3>
+    <main class="page-content">
+        <div class="header">
+            <div>
+                <h1>Hi, Gerald</h1>
+                <h3>Quick Overview</h3>
+            </div>
+            <div class="datetime">
+                <p>October 18, 2025<br>15:30 PM</p>
+            </div>
         </div>
-        <div class="datetime">
-            <p>October 18, 2025<br>15:30 PM</p>
-        </div>
-    </div>
 
-    <div class="overview">
-        <div class="card blue">
-            <p>Total Systems Document</p>
-            <h2>125</h2>
+        <div class="overview">
+            <div class="card blue">
+                <p>Total Systems Document</p>
+                <h2>125</h2>
+            </div>
+            <div class="card yellow">
+                <p>Global Documents Needing Review</p>
+                <h2>2</h2>
+            </div>
+            <div class="card red">
+                <p>Active Users (All Roles)</p>
+                <h2>28</h2>
+            </div>
+            <div class="card purple">
+                <p>Programs Under Accreditation</p>
+                <h2>3</h2>
+            </div>
         </div>
-        <div class="card yellow">
-            <p>Global Documents Needing Review</p>
-            <h2>2</h2>
+
+        <div class="summary">
+            <h2>Administrator Access Summary</h2>
+            <p>
+                You have full system oversight. Use the table below to review and
+                Approve/Disapprove submissions from all Faculty users across all
+                programs.
+            </p>
         </div>
-        <div class="card red">
-            <p>Active Users (All Roles)</p>
-            <h2>28</h2>
+
+        <br><br>
+        <h2>Global Document Review Queue</h2>
+
+        <div class="filter-bar">
+            <input type="text" placeholder="Search by Document Title" />
+            <select>
+                <option>Filter by All</option>
+                <option>Approved</option>
+                <option>Awaiting Review</option>
+                <option>Under Review</option>
+                <option>Disapproved</option>
+            </select>
         </div>
-        <div class="card purple">
-            <p>Programs Under Accreditation</p>
-            <h2>3</h2>
-        </div>
-    </div>
 
-    <div class="summary">
-        <h2>Administrator Access Summary</h2>
-        <p>
-            You have full system oversight. Use the table below to review and
-            Approve/Disapprove submissions from all Faculty users across all
-            programs.
-        </p>
-    </div>
-
-    <br><br>
-    <h2>Global Document Review Queue</h2>
-
-    <div class="filter-bar">
-        <input type="text" placeholder="Search by Document Title" />
-        <select>
-            <option>Filter by All</option>
-            <option>Approved</option>
-            <option>Awaiting Review</option>
-            <option>Under Review</option>
-            <option>Disapproved</option>
-        </select>
-    </div>
-
-    <table>
-        <tr>
-            <th>Document Title</th>
-            <th>Program</th>
-            <th>Uploader</th>
-            <th>Status</th>
-            <th>Action</th>
-        </tr>
-        <tr>
-            <td>BSCS Course Syllabus<br>Collection (2024)</td>
-            <td>BS Computer<br>Science</td>
-            <td>J. Dela Cruz</td>
-            <td>Approved</td>
-            <td class="actions">
-                <button class="action-btn disapprove">Disapprove</button>
-            </td>
-        </tr>
-        <tr>
-            <td>Faculty Credentials and<br>Profile (2023–2024)</td>
-            <td>BS Computer<br>Science</td>
-            <td>E. Rivera</td>
-            <td>Awaiting Review</td>
-            <td class="actions">
-                <button class="action-btn approve">Approve</button>
-                <button class="action-btn disapprove">Disapprove</button>
-            </td>
-        </tr>
-        <tr>
-            <td>Student Handbook<br>and Policies</td>
-            <td>BS Information<br>Technology</td>
-            <td>J. Dela Cruz</td>
-            <td>Disapproved</td>
-            <td class="actions">
-                <button class="action-btn approve">Approve</button>
-            </td>
-        </tr>
-        <tr>
-            <td>Budget Allocation<br>Report Q3</td>
-            <td>BS Electrical<br>Engineering</td>
-            <td>R. Garcia</td>
-            <td>Under Review</td>
-            <td class="actions">
-                <button class="action-btn approve">Approve</button>
-                <button class="action-btn disapprove">Disapprove</button>
-            </td>
-        </tr>
-        <tr>
-            <td>List of Research<br>Publications (2022)</td>
-            <td>BS Computer<br>Science</td>
-            <td>E. Rivera</td>
-            <td>Approved</td>
-            <td class="actions">
-                <button class="action-btn disapprove">Disapprove</button>
-            </td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <th>Document Title</th>
+                <th>Program</th>
+                <th>Uploader</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>BSCS Course Syllabus<br>Collection (2024)</td>
+                <td>BS Computer<br>Science</td>
+                <td>J. Dela Cruz</td>
+                <td>Approved</td>
+                <td class="actions">
+                    <button class="action-btn disapprove">Disapprove</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Faculty Credentials and<br>Profile (2023–2024)</td>
+                <td>BS Computer<br>Science</td>
+                <td>E. Rivera</td>
+                <td>Awaiting Review</td>
+                <td class="actions">
+                    <button class="action-btn approve">Approve</button>
+                    <button class="action-btn disapprove">Disapprove</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Student Handbook<br>and Policies</td>
+                <td>BS Information<br>Technology</td>
+                <td>J. Dela Cruz</td>
+                <td>Disapproved</td>
+                <td class="actions">
+                    <button class="action-btn approve">Approve</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Budget Allocation<br>Report Q3</td>
+                <td>BS Electrical<br>Engineering</td>
+                <td>R. Garcia</td>
+                <td>Under Review</td>
+                <td class="actions">
+                    <button class="action-btn approve">Approve</button>
+                    <button class="action-btn disapprove">Disapprove</button>
+                </td>
+            </tr>
+            <tr>
+                <td>List of Research<br>Publications (2022)</td>
+                <td>BS Computer<br>Science</td>
+                <td>E. Rivera</td>
+                <td>Approved</td>
+                <td class="actions">
+                    <button class="action-btn disapprove">Disapprove</button>
+                </td>
+            </tr>
+        </table>
+    </main>
 </body>
 
 </html>
