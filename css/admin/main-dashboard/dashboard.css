@@ -6,6 +6,10 @@ body {
     padding: 40px;
 }
 
+body.sidebar-expanded {
+  padding-left: 225px;
+}
+
 h1,
 h2,
 h3 {
