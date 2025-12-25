@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    background-color: #f9f9f6;
+    font-family: "Inter", Arial, sans-serif;
+    color: #333;
+    padding: 40px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2d4a2f;
+}
+
+h3 {
+    color: #555;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.datetime {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    transition: transform 0.2s ease;
+    border-left: 6px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.blue {
+    border-left-color: #4a90e2;
+}
+
+.yellow {
+    border-left-color: #f5b942;
+}
+
+.red {
+    border-left-color: #e05a5a;
+}
+
+.purple {
+    border-left-color: #a27ce3;
+}
+
+.card h2 {
+    font-size: 40px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.summary {
+    margin-top: 40px;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.filter-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 500px;
+}
+
+.filter-bar select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 200px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+th,
+td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #f4f4f4;
+    color: #444;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+tr:hover td {
+    background-color: #f9fafb;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+}
+
+.approve {
+    background-color: #4caf50;
+}
+
+.review {
+    background-color: #f5b942;
+}
+
+.under {
+    background-color: #3498db;
+}
+
+.disapproved {
+    background-color: #e05a5a;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+}
+
+.action-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    transition: opacity 0.2s;
+}
+
+.action-btn.approve {
+    background-color: #4caf50;
+}
+
+.action-btn.disapprove {
+    background-color: #e05a5a;
+}
+
+.action-btn:hover {
+    opacity: 0.85;
+}
